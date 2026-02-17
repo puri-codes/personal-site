@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary: #F05A25;
+    --secondary: #3FA9F6;
+    --background-light: #F8F9FA;
+    --background-dark: #000000;
+    --surface-dark: #121212;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Inter', sans-serif, 'birthstone';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+.cards-marquee {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 100%;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  touch-action: pan-x;
+}
+
+.cards-track {
+  display: flex;
+  flex-shrink: 0;
+  gap: 1.5rem;
+  min-width: max-content;
+  animation: cards-scroll-left var(--cards-duration, 30s) linear infinite;
+  will-change: transform;
+}
+
+.cards-item {
+  flex: 0 0 auto;
+}
+
+.cards-marquee::-webkit-scrollbar {
+  display: none;
+}
+
+.cards-marquee:hover .cards-track,
+.cards-marquee:focus-within .cards-track {
+  animation-play-state: paused;
+}
+
+@keyframes cards-scroll-left {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(calc(-100% - 1.5rem));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cards-track {
+    animation: none;
+  }
+
+  .cards-track[aria-hidden="true"] {
+    display: none;
+  }
+
+  .cards-marquee {
+    overflow-x: auto;
+  }
+}
