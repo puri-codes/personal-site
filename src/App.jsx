@@ -637,7 +637,8 @@ export default function Portfolio() {
                 </div>
                 <div className="flex-1 relative">
                   <div className="relative w-full aspect-square max-w-lg mx-auto bg-slate-100 dark:bg-surface-dark rounded-xl overflow-hidden border border-white/10">
-                    <img alt="Portrait of the creator" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" src="../images/nischal.png" />
+                    <img alt="Portrait of the creator" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" src="./public/images/nischal.png
+                    " />
                     {/*
                   <div className="absolute top-10 right-10 bg-white/90 dark:bg-black/80 backdrop-blur p-4 rounded-xl shadow-xl animate-pulse border border-white/20">
                     <span className="material-symbols-outlined text-secondary text-3xl">design_services</span>
@@ -645,6 +646,7 @@ export default function Portfolio() {
                   <div className="absolute bottom-10 left-10 bg-white/90 dark:bg-black/80 backdrop-blur p-4 rounded-xl shadow-xl animate-pulse border border-white/20">
                     <span className="material-symbols-outlined text-secondary text-3xl">code</span>
                   </div>
+                  Hello
                   */}
                   </div>
                   {/* Decorative scribble accents 
