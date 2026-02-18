@@ -47,6 +47,14 @@ The built files will be in the `dist` folder.
 npm run preview
 ```
 
+### Deploy to Cloudflare
+
+```bash
+npm run deploy:cf
+```
+
+This builds the app and deploys the `dist` directory using Wrangler.
+
 ## Project Structure
 
 ```
