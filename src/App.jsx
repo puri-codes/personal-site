@@ -646,6 +646,7 @@ export default function Portfolio() {
                   <div className="absolute bottom-10 left-10 bg-white/90 dark:bg-black/80 backdrop-blur p-4 rounded-xl shadow-xl animate-pulse border border-white/20">
                     <span className="material-symbols-outlined text-secondary text-3xl">code</span>
                   </div>
+                  Hello
                   */}
                   </div>
                   {/* Decorative scribble accents 
